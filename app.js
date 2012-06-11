@@ -29,9 +29,13 @@ app.configure('development', function(){
 
 app.get('/', routes.dataset);
 
+app.get('/index.html', routes.dataset);
+
 app.get('/linkset', routes.linkset);
 
 app.get('/concept/:id', routes.redirect);
+
+app.get('/t4gm-dump.rdf.gz', routes.gone);
 
 app.get('/about', routes.gone);
 
