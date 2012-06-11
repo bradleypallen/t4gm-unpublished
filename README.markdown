@@ -25,9 +25,9 @@ MIT.
 
  [1]: http://patterns.dataincubator.org/book/unpublish.html
  [2]: http://id.loc.gov/vocabulary/graphicMaterials.html
- [3]: /
+ [3]: http://www.t4gm.info
  [4]: http://www.w3.org/TR/void/
- [5]: /linkset
+ [5]: http://www.t4gm.info/linkset
  [6]: http://bradleypallen.org
  [7]: http://thedatahub.org/en/dataset/t4gm-info
  
