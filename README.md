@@ -12,6 +12,11 @@ Published in 2009, t4gm.info was a Linked Data rendering in RDFa of the Library 
 
 t4gm.info is an experimental project of [Bradley P. Allen][6].
 
+## Requirements
+
+* Node
+* NPM
+
 ## Installation
 
     $ git clone https://github.com/bradleypallen/t4gm-unpublished.git
