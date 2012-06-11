@@ -12,9 +12,17 @@ Published in 2009, t4gm.info was a Linked Data rendering in RDFa of the Library 
 
 t4gm.info is an experimental project of [Bradley P. Allen][6].
 
+## Installation
+
+    $ git clone https://github.com/bradleypallen/t4gm-unpublished.git
+    $ cd t4gm-unpublished
+    $ npm install .
+    $ npm start
+
 ## For more information
 
 Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][7].
+
 ## Future work
 
 Our intention is to generalize this implementation into a Node module that can support unpublishing of linked data resources in general.
