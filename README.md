@@ -14,8 +14,8 @@ t4gm.info is an experimental project of [Bradley P. Allen][6].
 
 ## Requirements
 
-* Node
-* NPM
+* [Node][7]
+* [NPM][8]
 
 ## Installation
 
@@ -26,15 +26,16 @@ t4gm.info is an experimental project of [Bradley P. Allen][6].
 
 ## For more information
 
-Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][7].
+Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][9].
 
 ## Future work
 
 Our intention is to generalize this implementation into a Node module that can support unpublishing of linked data resources in general.
 
-## License
+## Licensing
 
-MIT.
+The code is provided under the terms of the [MIT license][10]. Data provided in /public/data is provided under terms of the [Open Database License v1.0][11].
+
 
  [1]: http://patterns.dataincubator.org/book/unpublish.html
  [2]: http://id.loc.gov/vocabulary/graphicMaterials.html
@@ -42,5 +43,9 @@ MIT.
  [4]: http://www.w3.org/TR/void/
  [5]: http://www.t4gm.info/linkset
  [6]: http://bradleypallen.org
- [7]: http://thedatahub.org/en/dataset/t4gm-info
+ [7]: http://nodejs.org
+ [8]: http://npmjs.org
+ [9]: http://thedatahub.org/en/dataset/t4gm-info
+ [10]: http://www.opensource.org/licenses/mit-license.php
+ [11]: http://opendatacommons.org/licenses/odbl/1.0/
  
