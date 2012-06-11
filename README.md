@@ -17,7 +17,7 @@ t4gm.info is an experimental project of [Bradley P. Allen][6].
 Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][7].
 ## Future work
 
-Our best intentions are to generalize this implementation into a Node module that can support unpublishing of linked data resources in general.
+Our intention is to generalize this implementation into a Node module that can support unpublishing of linked data resources in general.
 
 ## License
 
