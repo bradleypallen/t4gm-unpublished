@@ -1,4 +1,4 @@
-# t4gm-unpublished: a example of removing a previously published linked data resource from the Web
+# t4gm-unpublished: removing previously published linked data  from the Web
 
 ## What was/is t4gm.info?
 
