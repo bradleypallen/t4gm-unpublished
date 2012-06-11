@@ -2,38 +2,22 @@
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:void="http://rdfs.org/ns/void#">
   <rdf:Description rdf:about="http://www.t4gm.info/">
     <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/">
     <foaf:homepage rdf:resource="http://www.t4gm.info/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/">
     <void:uriSpace>http://www.t4gm.info/concept/</void:uriSpace>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/">
+    <dcterms:license rdf:resource="http://opendatacommons.org/licenses/odbl/1.0/"/>
     <dcterms:isReplacedBy rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/graphicMaterials">
     <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/graphicMaterials">
     <foaf:homepage rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials.html"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/graphicMaterials">
     <dcterms:replaces rdf:resource="http://www.t4gm.info/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.t4gm.info/linkset/">
     <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/linkset/">
     <void:linkPredicate rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/linkset/">
     <void:subjectsTarget rdf:resource="http://www.t4gm.info/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/linkset/">
     <void:objectsTarget rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.t4gm.info/linkset/">
+    <dcterms:license rdf:resource="http://opendatacommons.org/licenses/odbl/1.0/"/>
     <void:dataDump rdf:resource="http://www.t4gm.info/linkset/"/>
   </rdf:Description>
 </rdf:RDF>
