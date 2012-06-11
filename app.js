@@ -31,7 +31,7 @@ app.get('/', routes.dataset);
 
 app.get('/linkset', routes.linkset);
 
-app.get('concept/:id', routes.redirect);
+app.get('/concept/:id', routes.redirect);
 
 app.get('/about', routes.gone);
 
