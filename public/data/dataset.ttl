@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.t4gm.info/>
+  rdf:type void:Dataset ;
+  foaf:homepage <http://www.t4gm.info/> ;
+  void:uriSpace "http://www.t4gm.info/concept/" ;
+  dcterms:isReplacedBy <http://id.loc.gov/vocabulary/graphicMaterials> .
+
+<http://id.loc.gov/vocabulary/graphicMaterials>
+  rdf:type void:Dataset ;
+  foaf:homepage <http://id.loc.gov/vocabulary/graphicMaterials.html> ;
+  dcterms:replaces <http://www.t4gm.info/> .
+
+<http://www.t4gm.info/linkset/>
+  rdf:type void:Linkset ;
+  void:linkPredicate skos:exactMatch ;
+  void:subjectsTarget <http://www.t4gm.info/> ;
+  void:objectsTarget <http://id.loc.gov/vocabulary/graphicMaterials> ;
+  void:dataDump <http://www.t4gm.info/linkset/> .

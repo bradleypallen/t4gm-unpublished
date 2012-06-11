@@ -1,0 +1,53 @@
+extends layout
+
+block content
+
+  h1= title
+
+  h2 What is t4gm.info?
+
+  p Published in 2009, t4gm.info was a Linked Data rendering in RDFa of the Library of Congress'
+    | Thesaurus for Graphic Materials. It is now an early example of 
+    a(href='http://patterns.dataincubator.org/book/unpublish.html') a linked data set that has been permanently removed from the Web
+    | , since it has been superceded by the U.S. Library of Congress' own 
+    a(href='http://id.loc.gov/vocabulary/graphicMaterials.html') Thesaurus for Graphic Materials
+    | , now provided as part of the Library of Congress's linked data services. t4gm.info was unpublished in 2012.
+
+  h2 What does it do now?
+
+  p 
+    a(href="/") This page
+    |  provides a brief 
+    a(href="http://www.w3.org/TR/void/") VoiD
+    |  description of the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa.
+    | In addition, this site provides a specific mapping of resources from t4gm.info to id.loc.gov as  
+    a(href="/linkset") a VoiD linkset
+    | . Both the VoiD dataset and linkset descriptions can be retrieved through content negotiation 
+    | in a variety of linked data formats (i.e., in either RDF/XML, Turtle, or N-Triples.)
+    | GET requests for t4gm.info concept resources are redirected as 301 Moved Permanently to the equivalent resource at id.loc.gov. 
+    | GET requests for any other resources that were part of the original t4gm.info site are returned as 410 Gone.
+  div(xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#", xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#", xmlns="http://www.w3.org/1999/xhtml", xmlns:foaf="http://xmlns.com/foaf/0.1/", xmlns:dcterms="http://purl.org/dc/terms/", xmlns:void="http://rdfs.org/ns/void#", xmlns:xsd="http://www.w3.org/2001/XMLSchema#")
+    div(class="description", about="http://id.loc.gov/vocabulary/graphicMaterials", typeof="void:Dataset")
+      div(rel="foaf:homepage", resource="http://id.loc.gov/vocabulary/graphicMaterials.html")
+      div(rel="dcterms:replaces")
+        div(class="description", about="http://www.t4gm.info/", typeof="void:Dataset")
+          div(rel="foaf:homepage", resource="http://www.t4gm.info/")
+          div(rel="dcterms:isReplacedBy", resource="http://id.loc.gov/vocabulary/graphicMaterials")
+          div(property="void:uriSpace", content="http://www.t4gm.info/concept/")
+    div(class="description", about="http://www.t4gm.info/linkset/", typeof="void:Linkset")
+      div(rel="void:dataDump", resource="http://www.t4gm.info/linkset/")
+      div(rel="void:linkPredicate", resource="http://www.w3.org/2004/02/skos/core#exactMatch")
+      div(rel="void:objectsTarget", resource="http://id.loc.gov/vocabulary/graphicMaterials")
+      div(rel="void:subjectsTarget", resource="http://www.t4gm.info/")
+
+  h2 Who is responsible?
+
+  p t4gm.info is an experimental project of 
+    a(href="http://bradleypallen.org") Bradley P. Allen
+    |.
+
+  h2 For more information
+
+  p Additional information about the linked data at t4gm.info can be found at 
+    a(href='http://thedatahub.org/en/dataset/t4gm-info') the entry for the dataset on the CKAN Data Hub
+    |.

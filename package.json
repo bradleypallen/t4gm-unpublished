@@ -1,0 +1,37 @@
+{
+  "name": "t4gm-unpublished",
+  "version": "0.0.1",
+  "author": "Bradley P. Allen <bradley.p.allen@gmail.com>",
+  "description": "a replacement for the original t4gm.info linked data service, now an example of an unpublished linked data resource",
+  "contributors": [ 
+    {
+      "name": "Bradley P. Allen",
+      "email": "bradley.p.allen@gmail.com"
+    } 
+  ],
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradleypallen/t4gm-unpublished.git"
+  },
+  "keywords": [
+    "linked-data",
+    "http",
+    "redirect",
+    "server"
+  ],
+  "dependencies" : {
+    "express": "3.0.0alpha5",
+    "jade": "*",
+    "buffered-reader": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/bradleypallen/t4gm-unpublished/issues"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.6.18"
+  }
+}
