@@ -6,7 +6,9 @@ Published in 2009, t4gm.info was originally a Linked Data rendering in RDFa of t
 
 ## What does it do now?
 
-[This page][3] provides [VoiD][4] metadata describing the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa. This site also provides a mapping of resources from t4gm.info to id.loc.gov as [a VoiD linkset][5]. Both the dataset metadata and linkset can be retrieved through content negotiation as either RDF/XML, Turtle, or N-Triples documents. GET requests for t4gm.info concept resources are redirected with status code 301 (Moved Permanently) to the equivalent resource at id.loc.gov. GET requests for any other resources that were part of the original t4gm.info site are rejected with status code 410 (Gone).
+[This page][3] provides [VoiD][4] metadata describing the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa. This site also provides a mapping of resources from t4gm.info to id.loc.gov as [a VoiD linkset][5]. Both the dataset metadata and linkset can be retrieved through content negotiation as either RDF/XML, Turtle, or N-Triples documents. GET requests for t4gm.info concept resources are redirected with status code 301 (Moved Permanently) to the equivalent resource at id.loc.gov. GET requests for any other resources that were part of the original t4gm.info site are rejected with status code 410 (Gone). 
+
+Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][9].
 
 ## Who is responsible?
 
@@ -24,15 +26,11 @@ t4gm.info is an experimental project of [Bradley P. Allen][6].
     $ npm install .
     $ npm start
 
-## For more information
-
-Additional information about the linked data at t4gm.info can be found at [the entry for the dataset on the CKAN Data Hub][9].
-
 ## Future work
 
 Our intention is to generalize this implementation into a Node module that can support unpublishing of linked data resources in general.
 
-## Licensing
+## Licenses
 
 The code is provided under the terms of an [MIT License][10]. The data in /public/data is provided under terms of an [Open Database License][11].
 
