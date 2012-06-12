@@ -34,8 +34,7 @@ Our intention is to generalize this implementation into a Node module that can s
 
 ## Licensing
 
-The code is provided under the terms of an [MIT license][10]. The data in /public/data is provided under terms of an [Open Database License v1.0 license][11].
-
+The code is provided under the terms of an [MIT License][10]. The data in /public/data is provided under terms of an [Open Database License][11].
 
  [1]: http://patterns.dataincubator.org/book/unpublish.html
  [2]: http://id.loc.gov/vocabulary/graphicMaterials.html
