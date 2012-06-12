@@ -33,7 +33,7 @@ app.get('/index.html', routes.dataset);
 
 app.get('/linkset', routes.linkset);
 
-app.get('/concept/:id', routes.redirect);
+app.get('/concept/:id.:format?', routes.redirect);
 
 app.get('/t4gm-dump.rdf.gz', routes.gone);
 

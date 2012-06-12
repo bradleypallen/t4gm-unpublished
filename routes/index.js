@@ -40,15 +40,22 @@ exports.redirect = function(req, res) {
     var head = 'HEAD' == req.method
       , target_url = res.app.settings.mapping[req.url]
       , body;
+    if (target_url == null && req.params.format != null) {
+	var ext = '.' + req.params.format;
+	target_url = res.app.settings.mapping[req.url.substring(0, req.url.lastIndexOf(ext))] + ext;
+    }
     if (target_url != null) {
-	res.statusCode = 301;
-	if (req.accepts('text')) {
+	if (req.accepts(['text/plain', 'application/rdf+xml'])) {
+	    res.statusCode = 301;
 	    body = statusCodes[301] + '. Redirecting to ' + target_url;
-	}
-	if (req.accepts('html')) {
+ 	    res.set('Location', target_url);
+	} else if (req.accepts('html')) {
+	    res.statusCode = 301;
 	    body = '<p>' + statusCodes[301] + '. Redirecting to <a href="' + target_url + '">' + target_url + '</a></p>';
+ 	    res.set('Location', target_url);
+	} else {
+	    res.statusCode = 406;
 	}
- 	res.set('Location', target_url);
     } else {
 	res.statusCode = 404;
     }
