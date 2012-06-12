@@ -10,27 +10,26 @@ block content
   h2 What is t4gm.info?
 
   p Published in 2009, t4gm.info was a Linked Data rendering in RDFa of the Library of Congress'
-    | Thesaurus for Graphic Materials. It is now an early example of 
-    a(href='http://patterns.dataincubator.org/book/unpublish.html') a linked data set that has been permanently removed from the Web
-    | , since it has been superceded by the U.S. Library of Congress' own 
     a(href='http://id.loc.gov/vocabulary/graphicMaterials.html') Thesaurus for Graphic Materials
-    | , now provided as part of the Library of Congress's linked data services. t4gm.info was unpublished in 2012,
-    | and data on the site is licensed under the terms of the 
+    | . It is now an example of 
+    a(href='http://patterns.dataincubator.org/book/unpublish.html') a linked data set that has been permanently removed from the Web
+    | , having been made obsolete by the version now provided as part of the U.S. Library of Congress's linked data services. 
+    | t4gm.info was unpublished in 2012, and data on the site is available under the terms of the 
     a(href='http://opendatacommons.org/licenses/odbl/1.0/') Open Database License (ODbL) v1.0.
 
   h2 What does it do now?
 
   p 
     a(href="/") This page
-    |  provides a brief 
+    |  provides  
     a(href="http://www.w3.org/TR/void/") VoiD
-    |  description of the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa.
-    | In addition, this site provides a specific mapping of resources from t4gm.info to id.loc.gov as  
+    |  metadata describing the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa.
+    | In addition, this site provides a mapping of resources from t4gm.info to id.loc.gov as  
     a(href="/linkset") a VoiD linkset
-    | . Both the VoiD dataset and linkset descriptions can be retrieved through content negotiation 
-    | in a variety of linked data formats (i.e., in either RDF/XML, Turtle, or N-Triples.)
-    | GET requests for t4gm.info concept resources are redirected as 301 Moved Permanently to the equivalent resource at id.loc.gov. 
-    | GET requests for any other resources that were part of the original t4gm.info site are returned as 410 Gone.
+    | . Both the dataset metadata and linkset can be retrieved through content negotiation 
+    | as either RDF/XML, Turtle, or N-Triples documents.
+    | GET requests for t4gm.info concept resources are redirected as 301 (Moved Permanently) to the equivalent resource at id.loc.gov. 
+    | GET requests for any other resources that were part of the original t4gm.info site are returned as 410 (Gone.)
   div(xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#", xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#", xmlns="http://www.w3.org/1999/xhtml", xmlns:foaf="http://xmlns.com/foaf/0.1/", xmlns:dcterms="http://purl.org/dc/terms/", xmlns:void="http://rdfs.org/ns/void#", xmlns:xsd="http://www.w3.org/2001/XMLSchema#")
     div(class="description", about="http://id.loc.gov/vocabulary/graphicMaterials", typeof="void:Dataset")
       div(rel="foaf:homepage", resource="http://id.loc.gov/vocabulary/graphicMaterials.html")

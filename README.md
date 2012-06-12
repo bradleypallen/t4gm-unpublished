@@ -6,7 +6,7 @@ Published in 2009, t4gm.info was a Linked Data rendering in RDFa of the Library 
 
 ## What does it do now?
 
-[This page][3] provides [VoiD][4] metadata describing the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa. This site also provides a specific mapping of resources from t4gm.info to id.loc.gov as [a VoiD linkset][5]. Both the dataset metadata and linkset can be retrieved through content negotiation as either RDF/XML, Turtle, or N-Triples documents. GET requests for t4gm.info concept resources are redirected with status code 301 (Moved Permanently) to the equivalent resource at id.loc.gov. GET requests for any other resources that were part of the original t4gm.info site are rejected with status code 410 (Gone).
+[This page][3] provides [VoiD][4] metadata describing the t4gm.info dataset and its relationship to the equivalent information at id.loc.gov, expressed in RDFa. This site also provides a mapping of resources from t4gm.info to id.loc.gov as [a VoiD linkset][5]. Both the dataset metadata and linkset can be retrieved through content negotiation as either RDF/XML, Turtle, or N-Triples documents. GET requests for t4gm.info concept resources are redirected with status code 301 (Moved Permanently) to the equivalent resource at id.loc.gov. GET requests for any other resources that were part of the original t4gm.info site are rejected with status code 410 (Gone).
 
 ## Who is responsible?
 
