@@ -3,7 +3,7 @@ var BufferedReader = require ('buffered-reader');
 
 exports.parse_linkset_ntriples = function (filename) {
     var mapping = {};
-    var re = /<(.+)>\s+<.+>\s+<(.+)>\s+\./;
+    var re = /<(.+)>\s+<.+>\s+<(.+)>\s*\./;
     new BufferedReader (filename, { encoding: "utf8" })
 	.on ("error", function (error) {
 	    console.log (error);
