@@ -2,7 +2,7 @@
 
 ## What was/is t4gm.info?
 
-Published in 2009, t4gm.info was originally a Linked Data rendering in RDFa of the Library of Congress' [Thesaurus for Graphic Materials][1]. It is now an  example of [a linked data set that has been permanently removed from the Web][1], having been made obsolete by the version now provided as part of the U.S. Library of Congress's linked data services. t4gm.info was unpublished in 2012.
+Published in 2009, t4gm.info was originally a Linked Data rendering in RDFa of the U.S. Library of Congress' [Thesaurus for Graphic Materials][1]. It is now an  example of [a linked data set that has been permanently removed from the Web][1], having been made obsolete by the version now provided as part of the Library of Congress' linked data services. t4gm.info was unpublished in 2012.
 
 ## What does it do now?
 
