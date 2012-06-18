@@ -1,6 +1,6 @@
 var statusCodes = require('http').STATUS_CODES;
 
-exports.dataset = function(req, res) {
+exports.index = function(req, res) {
     if (req.accepts('application/xhtml+xml')) {
 	res.set('Content-Type', 'application/xhtml+xml');
         res.render('index', { 'title': 't4gm.info' });

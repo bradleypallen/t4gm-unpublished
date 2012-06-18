@@ -27,9 +27,9 @@ app.configure('development', function(){
     app.use(express.errorHandler());
 });
 
-app.get('/', routes.dataset);
+app.get('/', routes.index);
 
-app.get('/index.html', routes.dataset);
+app.get('/index.html', routes.index);
 
 app.get('/linkset', routes.linkset);
 
