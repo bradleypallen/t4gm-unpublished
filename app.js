@@ -11,7 +11,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-    app.set('port', process.env.PORT || 6073);
+    app.set('port', process.env.PORT || 8081);
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.set('mapping', utils.parse_linkset_ntriples('./public/data/linkset.nt', 'http://www.t4gm.info'));
