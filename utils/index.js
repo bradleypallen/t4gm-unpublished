@@ -1,10 +1,10 @@
 var url = require ('url');
-var BufferedReader = require ('buffered-reader');
+var reader = require ('buffered-reader');
 
 exports.parse_linkset_ntriples = function (filename) {
     var mapping = {};
     var re = /<(.+)>\s+<.+>\s+<(.+)>\s*\./;
-    new BufferedReader (filename, { encoding: "utf8" })
+    new reader.DataReader (filename, { encoding: "utf8" })
 	.on ("error", function (error) {
 	    console.log (error);
 	})
